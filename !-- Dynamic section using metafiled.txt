@@ -1,0 +1,121 @@
+<!-- Dynamic section using metafiled -->
+<section class="dynamic-card-section">
+  <div class="dynamic-card">
+    <div class="dynamic-card-header">
+      <div class="dynamic-mask-img">
+        <img src="{{ product.metafields.custom.custom_image | file_url }}" alt="Custom Image">
+      </div>
+    </div>
+    <div class="dynamic-card-content">
+      <h2 class="dynamic-card-title">{{ product.metafields.custom.card_title_1 }}</h2>
+      <p class="dynamic-card-description">{{ product.metafields.custom._description_1 }}</p>
+      <a href="#" class="dynamic-card-button">Learn More</a>
+    </div>
+  </div>
+  <div class="dynamic-card">
+    <div class="dynamic-card-header">
+      <div class="dynamic-mask-img">
+        <img src="{{ product.metafields.custom.custom_image_2 | file_url }}" alt="Custom Image">
+      </div>
+    </div>
+    <div class="dynamic-card-content">
+      <h2 class="dynamic-card-title">{{ product.metafields.custom.card_title_2 }}</h2>
+      <p class="dynamic-card-description">{{ product.metafields.custom._description_1 }}</p>
+      <a href="#" class="dynamic-card-button">Learn More</a>
+    </div>
+  </div>
+  <div class="dynamic-card">
+    <div class="dynamic-card-header">
+      <div class="dynamic-mask-img">
+        <img src="{{ product.metafields.custom.custom_image_3 | file_url }}" alt="Custom Image">
+      </div>
+    </div>
+    <div class="dynamic-card-content">
+      <h2 class="dynamic-card-title">{{ product.metafields.custom.card_title_3 }}</h2>
+      <p class="dynamic-card-description">{{ product.metafields.custom._description_1 }}</p>
+      <a href="#" class="dynamic-card-button">Learn More</a>
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+    .dynamic-card-section {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      gap: 20px;
+      background: #e5e0db;
+          margin-top: 60px;
+    }
+
+    .dynamic-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 400px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+    }
+
+    .dynamic-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .dynamic-card-header {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .dynamic-mask-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-mask: url(data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><path d="M50 0L100 50L50 100L0 50L50 0Z" fill="black"/></svg>);
+      mask: url(data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><path d="M50 0L100 50L50 100L0 50L50 0Z" fill="black"/></svg>);
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      mask-size: cover;
+      -webkit-mask-size: cover;
+    }
+
+   .dynamic-card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+    .dynamic-card-title {
+      font-size: 1.5em;
+      margin: 0 0 10px;
+      color: #333;
+      text-align: center;
+    }
+
+    .dynamic-card-description {
+      color: #666;
+      font-size: 0.9em;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    .dynamic-card-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .dynamic-card-button:hover {
+      background-color: #cdd3cc;
+      transform: scale(1.05);
+    }
+</style>
