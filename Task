@@ -1,0 +1,53 @@
+ASSIGNMENT FOR WORDPRESS AND SHOPIFY DEVELOPER
+
+Objective:
+The goal of this assignment is to test your understanding of Shopify’s metafields, Dawn theme 
+customization, Liquid templating, and the creation of a customizable theme section. You will be 
+required to create a category viewing section using metafields, add additional Liquid 
+customizations, and create a customizable theme section for uploading images and content.
+
+Assignment Scope:
+
+Metafield Setup for Product Categories:
+- Create a metafield for each product to assign it to a specific category (e.g., "Engagement Rings," 
+"Statement Rings," etc.).
+- The categories should be assigned using metafields and stored in the product settings.
+- Display these categories as boxes with images and text (similar to the provided image) above the 
+product listing grid.
+
+Customizing the Dawn Theme:
+- Customize the PLP (collection template) in the Dawn theme to display these category boxes.
+- Each box should show an image (this can be either a metafield or a default image) and the 
+category name.
+- When a user clicks on a category box, they should be taken to a filtered view of the products 
+belonging to that category.
+
+Creating a Customizable Theme Section:
+- Create a new theme section using Liquid that can be customized from the Shopify theme editor.
+- This section should allow the admin to upload an image and input content (e.g., text or HTML) 
+via the theme customizer.
+- The image and content should be displayed dynamically on the PLP page or home page, 
+depending on where the section is included.
+- Ensure the section is responsive and follows the design consistency of the Dawn theme.
+
+Styling & Layout:
+- Ensure that the category boxes follow the layout as per the image provided, keeping the 
+responsive design principles in mind.
+- Implement hover effects and smooth transitions when hovering over the category boxes to 
+enhance the user experience.
+
+Additional Product Customization:
+- After the category boxes, the standard product grid should be displayed below.
+- Add metafield-driven product details, such as materials, available sizes, or product ratings, below 
+the product image in the grid.
+- Ensure the product grid remains responsive and consistent with the Dawn theme's design.
+
+Extra Liquid Customization:
+- Use Liquid to dynamically pull and display the categories on the PLP.
+- Implement a badge system that uses metafields to label products as "New," "Best Seller," or 
+"Limited Edition" within the product grid.
+
+Submission Guidelines:
+- Create a store on your Shopify Partners account and implement the changes on this store.
+- Share the store URL and password (if applicable) for us to access and review your work.
+- Optional: Provide a video demo or screenshots.
